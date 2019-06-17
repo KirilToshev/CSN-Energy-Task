@@ -27,6 +27,8 @@ namespace CSN_Energy_Task
             _calculationRule = calculationRule;
         }
 
+        public IEnumerable<Catalog> Catalogs { get { return _catalogs; } }
+
         public static Result<BookStore> Create(string schemaFilePath, ICalculationRule calculationRule)
         {
             return FileValidation.Validate<BookStore>(schemaFilePath, () =>

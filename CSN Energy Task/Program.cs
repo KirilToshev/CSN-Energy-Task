@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace CSN_Energy_Task
 {
-    class Program
+    public static class Program
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
         static void Main(string[] args)
